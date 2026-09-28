@@ -1,0 +1,19 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a class="header-logo" href="{{ '/' | relative_url }}" aria-label="Johann V. Hemmer home">
+      <img src="{{ '/assets/j_volt_h.svg' | relative_url }}" alt="" />
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}"{% if page.nav == "about" %} aria-current="page"{% endif %}>About</a>
+      <a href="{{ '/publications.html' | relative_url }}"{% if page.nav == "publications" %} aria-current="page"{% endif %}>Publications</a>
+      <a href="https://www.thingiverse.com/jhemmer/designs">Models</a>
+      <a href="{{ '/talks.html' | relative_url }}"{% if page.nav == "talks" %} aria-current="page"{% endif %}>Talks</a>
+      <a href="{{ '/service.html' | relative_url }}"{% if page.nav == "service" %} aria-current="page"{% endif %}>Service</a>
+      <a
+        href="{{ '/assets/documents/Johann-Hemmer-CV.pdf' | relative_url }}"
+        download="Johann-Hemmer-CV.pdf"
+      >CV</a>
+    </nav>
+  </div>
+</header>

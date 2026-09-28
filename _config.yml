@@ -1,0 +1,9 @@
+title: Johann V. Hemmer
+description: Academic profile of Johann V. Hemmer.
+baseurl: ""
+url: ""
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
