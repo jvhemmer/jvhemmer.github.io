@@ -233,6 +233,35 @@ h1 {
   margin-top: 14px;
 }
 
+.inline-link {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.inline-link:hover,
+.inline-link:focus-visible {
+  color: var(--text);
+}
+
+.advisor-link {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.advisor-link:hover,
+.advisor-link:focus-visible {
+  color: var(--text);
+}
+
+.external-link-icon {
+  width: 0.85em;
+  height: 0.85em;
+  margin-left: 0.22em;
+  vertical-align: -0.06em;
+}
+
 .education-list,
 .publication-years,
 .talk-list {
