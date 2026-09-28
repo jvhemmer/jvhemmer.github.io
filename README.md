@@ -1,14 +1,12 @@
-# Johann V. Hemmer — Academic Website
+# Johann V. Hemmer's website
 
 ## Local setup
 
 ### 1. Clone the repository
 
-Replace `<repository-url>` with the GitHub repository URL:
-
 ```bash
-git clone <repository-url>
-cd website
+git clone https://github.com/jvhemmer/jvhemmer.github.io
+cd jvhemmer.github.io
 ```
 
 ### 2. Install dependencies
