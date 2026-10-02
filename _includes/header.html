@@ -7,7 +7,7 @@
     <nav class="site-nav" aria-label="Main navigation">
       <a href="{{ '/' | relative_url }}"{% if page.nav == "about" %} aria-current="page"{% endif %}>About</a>
       <a href="{{ '/publications.html' | relative_url }}"{% if page.nav == "publications" %} aria-current="page"{% endif %}>Publications</a>
-      <a href="https://www.thingiverse.com/jhemmer/designs">Models</a>
+      <a href="{{ '/models.html' | relative_url }}"{% if page.nav == "models" %} aria-current="page"{% endif %}>Models</a>
       <a href="{{ '/talks.html' | relative_url }}"{% if page.nav == "talks" %} aria-current="page"{% endif %}>Talks</a>
       <a href="{{ '/service.html' | relative_url }}"{% if page.nav == "service" %} aria-current="page"{% endif %}>Service</a>
       <a

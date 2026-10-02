@@ -9,11 +9,27 @@
   </head>
   <body>
     {% include header.html %}
+    {% if page.work_notice %}
+      {% include site-notice.html %}
+    {% endif %}
 
     <main class="about-layout">
       {% include profile.html %}
 
       <div class="home-content">{{ content }}</div>
     </main>
+
+    {% if page.gallery %}
+      <script src="{{ '/assets/gallery.js' | relative_url }}" defer></script>
+    {% endif %}
+    {% if page.model_viewer %}
+      <script
+        type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"
+      ></script>
+    {% endif %}
+    {% if page.work_notice %}
+      <script src="{{ '/assets/site.js' | relative_url }}" defer></script>
+    {% endif %}
   </body>
 </html>

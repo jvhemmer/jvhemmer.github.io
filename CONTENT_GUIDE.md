@@ -3,16 +3,56 @@
 The site uses Jekyll to generate static HTML for GitHub Pages. Entries are
 ordered newest first and share reusable CSS classes from `assets/home.css`.
 
-The four published pages are `index.html`, `publications.html`, `talks.html`,
-and `service.html`. Each page contains only its own content and a small YAML
-front matter block. Shared markup lives in:
+The five published pages are `index.html`, `publications.html`, `models.html`,
+`talks.html`, and `service.html`. Each page contains only its own content and a
+small YAML front matter block. Shared markup lives in:
 
 - `_layouts/default.html`: document shell and page layout
 - `_includes/header.html`: logo and navigation
+- `_includes/site-notice.html`: optional dismissible page-status notice
 - `_includes/profile.html`: portrait, affiliation, email, and profile links
 
 Edit a shared file once to update every generated page. The `nav` value in a
 page's front matter controls which navigation link is highlighted.
+The notice's close behavior is defined in `assets/site.js`. Add
+`work_notice: true` to a page's front matter to display it on that page.
+
+## Models
+
+Edit `models.html`. Each type of model is a full `text-section`, like the
+sections on the About page. Individual designs are `model-subsection` sections
+inside that category's `model-subsections` container.
+
+```html
+<section class="text-section model-category" aria-labelledby="category-name">
+  <div class="section-heading">
+    <h2 id="category-name">Category name</h2>
+    <div class="heading-rule" aria-hidden="true">
+      <img src="assets/cv-trace.svg" alt="" width="75" height="56" />
+    </div>
+  </div>
+  <div class="model-subsections">
+    <section class="model-subsection" aria-labelledby="model-name">
+      <h3 id="model-name">Model name</h3>
+      <p class="model-description">Model description.</p>
+      <!-- Add gallery links inside a model-gallery container. -->
+    </section>
+  </div>
+</section>
+```
+
+Gallery previews are ordinary links with the `gallery-thumbnail` and
+`data-gallery-thumbnail` attributes. JavaScript uses them to replace the large
+`data-gallery-stage` image. Their link targets still open normally if
+JavaScript is unavailable. Set `gallery: true` in the page front matter to
+enable this behavior and the enlarged viewer with previous/next controls.
+Store the visible large-image caption in each preview's
+`data-gallery-caption` attribute; thumbnails themselves do not display text.
+Each `model-gallery` is independent, so one page can contain as many galleries
+as needed while sharing the same enlarged image viewer.
+For a GLB preview, add `data-gallery-kind="model"` and point the thumbnail link
+to the model file. Pages containing a 3D preview must also set
+`model_viewer: true` in their front matter.
 
 ## Publications
 
