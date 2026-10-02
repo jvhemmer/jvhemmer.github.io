@@ -646,11 +646,15 @@ h1 {
   margin-top: var(--entry-detail-gap);
 }
 
-.entry-institution,
 .publication-journal,
 .talk-event {
   color: var(--text) !important;
   font-weight: 600;
+}
+
+.entry-institution {
+  color: var(--text) !important;
+  font-weight: 400;
 }
 
 .institution-country {
@@ -691,6 +695,15 @@ h1 {
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.04em;
+}
+
+.education-title {
+  min-width: 0;
+}
+
+.education-field {
+  color: var(--text);
+  font-weight: 700;
 }
 
 .education-thesis {

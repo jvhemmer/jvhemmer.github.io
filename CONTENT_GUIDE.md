@@ -102,7 +102,10 @@ Edit `index.html`. Add entries inside `<div class="education-list">`.
 <article class="education-entry">
   <div>
     <h3>
-      Degree and field
+      <span class="education-title">
+        <span class="education-degree">Degree:</span>
+        <span class="education-field">Field</span>
+      </span>
       <span class="education-year">Completion year</span>
     </h3>
     <p class="entry-institution">
