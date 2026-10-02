@@ -105,7 +105,9 @@ Edit `index.html`. Add entries inside `<div class="education-list">`.
       Degree and field
       <span class="education-year">Completion year</span>
     </h3>
-    <p class="entry-institution">Institution</p>
+    <p class="entry-institution">
+      Institution, <span class="institution-country">Country</span>
+    </p>
     <p class="education-thesis">Thesis: Thesis title</p>
     <p>Advisor: Name, Ph.D.</p>
   </div>
@@ -113,7 +115,7 @@ Edit `index.html`. Add entries inside `<div class="education-list">`.
 ```
 
 Omit the thesis line when it is not applicable. Use `Present` for an ongoing
-degree.
+degree. Country names are displayed in muted italics.
 
 ## Scientific notation
 

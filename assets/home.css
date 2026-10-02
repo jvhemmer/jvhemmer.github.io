@@ -653,6 +653,12 @@ h1 {
   font-weight: 600;
 }
 
+.institution-country {
+  color: var(--muted);
+  font-style: italic;
+  font-weight: 400;
+}
+
 .publication-entries {
   display: grid;
   gap: 28px;
